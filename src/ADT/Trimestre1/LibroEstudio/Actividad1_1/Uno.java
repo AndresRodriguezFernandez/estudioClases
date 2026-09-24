@@ -1,4 +1,4 @@
-package ADT.Trimestre1.Actividad1_1;
+package ADT.Trimestre1.LibroEstudio.Actividad1_1;
 
 import java.io.File;
 import java.util.Scanner;

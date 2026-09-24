@@ -1,4 +1,4 @@
-package PSP.Trimestre1.Ej1_2;
+package PSP.Trimestre1.LibroEstudio.Ej1_2;
 
 public class Programita {
     public int sumar(int numero1, int numero2) {

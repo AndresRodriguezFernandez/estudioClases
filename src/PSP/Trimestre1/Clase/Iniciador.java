@@ -1,4 +1,4 @@
-package PSP.Trimestre1;
+package PSP.Trimestre1.Clase;
 
 import java.io.File;
 

@@ -1,4 +1,4 @@
-package PSP.Trimestre1.Ej1_2;
+package PSP.Trimestre1.LibroEstudio.Ej1_2;
 
 import java.io.IOException;
 

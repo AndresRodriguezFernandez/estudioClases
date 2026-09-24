@@ -1,4 +1,4 @@
-package PSP.Trimestre1.Ej16PSP;
+package PSP.Trimestre1.Clase.Ej16PSP;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

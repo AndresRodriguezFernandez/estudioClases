@@ -1,4 +1,4 @@
-package PSP.Trimestre1.procesos;
+package PSP.Trimestre1.Clase.procesos;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,4 +1,4 @@
-package PSP.Trimestre1;
+package PSP.Trimestre1.Clase;
 
 public class Multiplicador {
     public  static int multiplicar(int n1, int n2)  {

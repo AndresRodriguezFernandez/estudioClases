@@ -1,4 +1,4 @@
-package PSP.Trimestre1.iniciadorProcesos;
+package PSP.Trimestre1.Clase.iniciadorProcesos;
 
 public class iniciadorProcesos {
     public void ejecutar(String ruta) {

@@ -1,4 +1,4 @@
-package PSP.Trimestre1.Hilos1;
+package PSP.Trimestre1.Clase.Hilos1;
 
 public class HiloUnion extends Thread {
     private int numhilo;

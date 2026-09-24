@@ -1,4 +1,4 @@
-package PSP.Trimestre1.Hilos1;
+package PSP.Trimestre1.Clase.Hilos1;
 
 public class Principal {
     public static void main(String[] args) {
