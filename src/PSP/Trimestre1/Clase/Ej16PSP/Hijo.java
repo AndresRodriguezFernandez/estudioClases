@@ -1,6 +1,7 @@
 package PSP.Trimestre1.Clase.Ej16PSP;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Hijo {
@@ -13,7 +14,7 @@ public class Hijo {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Hijo h = new Hijo();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String linea = "";
