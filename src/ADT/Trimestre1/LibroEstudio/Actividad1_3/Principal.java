@@ -9,6 +9,7 @@ public class Principal {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         String nombre;
+
         do {
             System.out.print("Introduce un nombre: ");
             nombre = sc.nextLine();
