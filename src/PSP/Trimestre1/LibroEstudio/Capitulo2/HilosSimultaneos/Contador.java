@@ -3,11 +3,11 @@ package PSP.Trimestre1.LibroEstudio.Capitulo2.HilosSimultaneos;
 public class Contador {
     private int cuenta = 0;
 
-    public int getCuenta(){
+    public synchronized int getCuenta(){
         return cuenta;
     }
 
-    public int incrementa(){
+    public synchronized int incrementa(){
         this.cuenta++;
         return cuenta;
     }
