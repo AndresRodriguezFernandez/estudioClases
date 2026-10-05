@@ -1,0 +1,28 @@
+Ejercicio: Almacén de piezas
+Enunciado
+
+Una fábrica tiene una cinta transportadora con capacidad para 3 piezas como máximo. Varios operarios colocan piezas en la cinta (productores) y varios empaquetadores las retiran (consumidores).
+
+Implementa el sistema en Java con las siguientes clases:
+
+Clase Cinta
+Guarda las piezas en una estructura de tamaño máximo 3 (puedes usar un ArrayList<Integer> o una LinkedList<Integer>).
+Método synchronized void colocar(int pieza): si la cinta está llena, el hilo debe esperar. Cuando consigue colocar la pieza, imprime por pantalla "Operario colocó pieza X (en cinta: N)", donde N es el número de piezas que hay tras colocarla.
+Método synchronized int retirar(): si la cinta está vacía, el hilo debe esperar. Cuando retira una pieza (la más antigua, orden FIFO), imprime "Empaquetador retiró pieza X (en cinta: N)", donde N es el número de piezas que quedan tras retirarla.
+Clase Operario (extiende Thread)
+Recibe en el constructor la cinta y un identificador.
+Coloca 6 piezas en la cinta. Cada pieza se identifica con un número único (por ejemplo, id * 100 + i).
+Entre pieza y pieza duerme un tiempo aleatorio entre 100 y 300 ms.
+Clase Empaquetador (extiende Thread)
+Recibe en el constructor la cinta y un identificador.
+Retira 6 piezas de la cinta.
+Entre pieza y pieza duerme un tiempo aleatorio entre 200 y 400 ms.
+Clase Principal
+Crea una cinta, 2 operarios y 2 empaquetadores, y lanza todos los hilos.
+Espera a que todos terminen con join() y muestra al final el mensaje "Producción finalizada".
+Requisitos
+Usa wait() y notifyAll() (no uses Thread.sleep ni bucles para esperar a que haya hueco o piezas).
+Usa while para comprobar las condiciones.
+Los mensajes de la cinta deben imprimirse dentro del método sincronizado.
+En ningún momento el contador N de los mensajes puede ser mayor que 3 ni menor que 0.
+El programa debe terminar solo, sin bloquearse.
