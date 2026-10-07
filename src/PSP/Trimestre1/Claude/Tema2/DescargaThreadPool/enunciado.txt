@@ -1,0 +1,17 @@
+Una aplicación debe "descargar" 8 archivos. Para no saturar la red, solo se pueden hacer 3 descargas a la vez.
+
+Clase Descarga (implementa Runnable)
+Recibe en el constructor el número de archivo (1 a 8).
+En run():
+Imprime "Archivo X: descarga iniciada por <nombre del hilo>".
+Simula la descarga durmiendo un tiempo aleatorio entre 500 y 1500 ms.
+Imprime "Archivo X: descarga terminada".
+Clase Principal
+Crea un ExecutorService con Executors.newFixedThreadPool(3).
+Envía las 8 tareas con execute().
+Cierra el pool con shutdown() y espera con awaitTermination().
+Al final imprime "Todas las descargas finalizadas".
+Qué deberías observar
+Nunca hay más de 3 descargas en marcha a la vez.
+Los nombres de hilo solo son pool-1-thread-1, -2 y -3, que se repiten.
+Los archivos 4 a 8 empiezan solo cuando algún hilo queda libre.
