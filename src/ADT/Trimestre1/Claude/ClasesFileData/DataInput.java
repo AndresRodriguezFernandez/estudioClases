@@ -22,7 +22,10 @@ public class DataInput {
                 System.out.println(dis.readUTF());
             }
         }catch(EOFException e) {
-            System.out.println("Error "+e.getMessage());
+            dos.close();
+            dis.close();
         }
+        /*También se puede usar una try-wieth-resources para cerra solos los dis y el dos y poner en el catch un mensaje
+        * de final de fichero en lugar de cerrarlos explicitamente ahí.*/
     }
 }
