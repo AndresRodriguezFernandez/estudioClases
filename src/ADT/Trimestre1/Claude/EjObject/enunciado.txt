@@ -1,0 +1,38 @@
+Ejercicio: Gestión de una biblioteca
+Enunciado
+
+Crea un programa en Java que gestione una pequeña colección de libros guardada en un fichero binario mediante serialización de objetos.
+
+1. Clase Libro
+
+Crea una clase Libro que implemente Serializable con estos atributos:
+
+titulo (String)
+autor (String)
+anioPublicacion (int)
+precio (double)
+
+Incluye constructor, getters, y sobreescribe toString() para mostrar el libro de forma legible.
+
+2. Clase GestorBiblioteca
+
+Crea una clase con estos métodos estáticos:
+
+guardarLibros(List<Libro> libros, String nombreFichero) — escribe todos los libros de la lista en el fichero, uno detrás de otro, usando ObjectOutputStream.
+leerLibros(String nombreFichero) — lee todos los libros del fichero y los devuelve en un List<Libro>. Debes leer en bucle hasta capturar EOFException (recuerda tratarla como fin normal, no como error).
+calcularValorTotal(String nombreFichero) — lee el fichero y devuelve la suma de los precios de todos los libros (debe reutilizar leerLibros, no duplicar código de lectura).
+buscarPorAutor(String nombreFichero, String autor) — devuelve una List<Libro> solo con los libros de ese autor.
+
+3. Clase Main
+
+En el main:
+
+Crea al menos 4 libros diferentes y guárdalos en un fichero biblioteca.dat.
+Léelos todos de vuelta y muéstralos por pantalla.
+Muestra el valor total de la colección.
+Pide al usuario (por teclado, con Scanner) un nombre de autor y muestra solo los libros de ese autor.
+Gestiona correctamente las excepciones (IOException, ClassNotFoundException) con mensajes claros, sin que el programa “explote”.
+Requisitos extra (la parte que sube la dificultad)
+No debe haber ningún catch (Exception e) genérico: captura cada tipo de excepción por separado y trata EOFException de forma diferente a un IOException real.
+Usa try-with-resources para abrir los streams (así no tienes que hacer close() manualmente).
+Añade un método contarLibros(String nombreFichero) que devuelva un int, sin cargar todos los objetos en una lista (es decir, cuenta mientras lees, sin acumularlos en memoria).
