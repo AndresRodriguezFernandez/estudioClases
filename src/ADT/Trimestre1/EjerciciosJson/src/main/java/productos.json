@@ -1,0 +1,21 @@
+[ {
+  "codigo" : "1234A",
+  "nombre" : "Destornillador",
+  "precio" : 10.989,
+  "stock" : 2
+}, {
+  "codigo" : "4312B",
+  "nombre" : "Taladro",
+  "precio" : 39.99,
+  "stock" : 5
+}, {
+  "codigo" : "789C",
+  "nombre" : "Toalla",
+  "precio" : 5.99,
+  "stock" : 20
+}, {
+  "codigo" : "5567D",
+  "nombre" : "Boligrafo",
+  "precio" : 1.99,
+  "stock" : 10
+} ]
