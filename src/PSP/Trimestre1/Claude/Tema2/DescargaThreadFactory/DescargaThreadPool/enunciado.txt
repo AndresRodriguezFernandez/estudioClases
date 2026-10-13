@@ -1,0 +1,22 @@
+Parte de tu ejercicio de las descargas y añádele una ThreadFactory propia.
+
+Clase FabricaDescargadores (implementa ThreadFactory)
+Mantiene un contador que empieza en 1.
+En newThread(Runnable r):
+Crea un Thread con el Runnable recibido.
+Le pone el nombre "Descargador-N", donde N es el contador.
+Incrementa el contador.
+Devuelve el hilo (sin llamar a start()).
+Clase Descarga (la que ya tienes)
+Sin cambios, salvo ajustar los mensajes al formato del enunciado anterior: "Archivo X: descarga iniciada por <hilo>" y "Archivo X: descarga terminada".
+Clase Principal
+Crea el pool con Executors.newFixedThreadPool(3, new FabricaDescargadores()).
+Envía 6 descargas (archivos 1 a 6) con execute().
+Cierra con shutdown() y espera con awaitTermination().
+Imprime "Todas las descargas finalizadas".
+Qué deberías observar
+Los hilos se llaman solo Descargador-1, Descargador-2 y Descargador-3, y se repiten entre archivos.
+Ya no aparece ningún pool-1-thread-N.
+Ampliación opcional
+
+Haz que los hilos sean daemon con setDaemon(true). Comprueba qué pasa si quitas el awaitTermination(): ¿se completan las descargas o el programa termina antes?
