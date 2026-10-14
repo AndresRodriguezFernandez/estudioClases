@@ -1,0 +1,20 @@
+<discos>
+  <disco>
+    <titulo>Dark Side of the Moon</titulo>
+    <artista>Pink Floyd</artista>
+    <anio>1973</anio>
+    <precio>19.99</precio>
+  </disco>
+  <disco>
+    <titulo>Thriller</titulo>
+    <artista>Michael Jackson</artista>
+    <anio>1982</anio>
+    <precio>15.50</precio>
+  </disco>
+  <disco>
+    <titulo>Back in Black</titulo>
+    <artista>AC/DC</artista>
+    <anio>1980</anio>
+    <precio>17.25</precio>
+  </disco>
+</discos>

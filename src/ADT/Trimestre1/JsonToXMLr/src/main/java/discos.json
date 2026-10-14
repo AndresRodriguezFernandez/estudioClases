@@ -1,0 +1,18 @@
+{
+  "disco" : [ {
+    "titulo" : "Dark Side of the Moon",
+    "artista" : "Pink Floyd",
+    "anio" : "1973",
+    "precio" : "19.99"
+  }, {
+    "titulo" : "Thriller",
+    "artista" : "Michael Jackson",
+    "anio" : "1982",
+    "precio" : "15.50"
+  }, {
+    "titulo" : "Back in Black",
+    "artista" : "AC/DC",
+    "anio" : "1980",
+    "precio" : "17.25"
+  } ]
+}
