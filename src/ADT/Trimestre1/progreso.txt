@@ -1,0 +1,1 @@
+16/10/2026  -   Se estudió la teoría de java -> CSV con las propiedades @CsvBindbyName
