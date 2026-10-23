@@ -33,7 +33,7 @@ public class Pelicula {
         return this.titulo;
     }
 
-    public String tetDirector(){
+    public String setDirector(){
         return this.director;
     }
 
