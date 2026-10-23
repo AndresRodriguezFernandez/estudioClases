@@ -71,4 +71,16 @@ public class ClaseDAO {
         }
     }
 
+    public void eliminar_registro(String dni){
+        String sql = "DELETE FROM Aalumno WHERE id = ?";
+        try{
+            PreparedStatement ps = conexion.prepareStatement(sql);
+            ps.setString(1, dni);
+            int filasAfectadas = ps.executeUpdate();
+            System.out.println("Filas eliminadas: "+filasAfectadas);
+        }catch(SQLException e){
+            System.out.println("Error: "+e.getMessage());
+        }
+    }
+
 }
