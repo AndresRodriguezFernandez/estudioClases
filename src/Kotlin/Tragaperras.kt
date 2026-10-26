@@ -1,4 +1,4 @@
-package Kotlin.Tragaperras
+package Kotlin
 
 fun main(){
     println("===🎰MAQUINA TRAGAPERRAS🎰====")

@@ -34,7 +34,7 @@ public class ClaseDAO {
             System.out.println("Error: "+e.getMessage());
         }
     }
-
+/*
     public ArrayList<Clase> cargar_registros(ArrayList<Clase> lista){
         Statement s;
         ResultSet rs = null;
@@ -82,5 +82,5 @@ public class ClaseDAO {
             System.out.println("Error: "+e.getMessage());
         }
     }
-
+*/
 }
