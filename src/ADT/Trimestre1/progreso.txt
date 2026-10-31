@@ -1,2 +1,3 @@
 16/10/2026  -   Se estudió la teoría de java -> CSV con las propiedades @CsvBindbyName
 30/10/2026  -   Se estudio la teoria de java ->Ejecutor y pool de hilos + demas
+31/10/2026  -   Se ha empezado a estudiar la teoría y práctica de cara al examen.
