@@ -1,3 +1,5 @@
+package ADT.Trimestre1.Claude.JsonEj2Examen.src.main.java;
+
 public class Coche {
     private String matricula;
     private String marca;

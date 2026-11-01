@@ -1,8 +1,12 @@
 import java.io.*;
 import java.util.*;
 
+import ADT.Trimestre1.Claude.JsonEj2Examen.src.main.java.Coche;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.databind;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 public class Principal {
     public static void main(String[]args) {
