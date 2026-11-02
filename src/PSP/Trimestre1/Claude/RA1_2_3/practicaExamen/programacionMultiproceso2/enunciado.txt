@@ -1,0 +1,11 @@
+1. Programación multiproceso.
+Filtrado y conteo de matrículas pares (2,5 puntos)
+Crea una aplicación Java compuesta por dos clases: FiltroPares e IniciadorTrafico.
+El objetivo es contabilizar cuántos números de serie de vehículos en dos intervalos son pares.
+FiltroPares: Recibe dos números enteros positivos (límite inferior y límite superior) mediante los argumentos de main(String[] args).
+Cuenta cuántos números pares hay en dicho rango (ambos extremos inclusive) e imprime el resultado final mediante System.out.println().
+IniciadorTrafico:Solicita o define dos rangos (por ejemplo, 1000–2500 y 2501–4000).
+Lanza de forma asíncrona dos procesos hijos ejecutando FiltroPares con ProcessBuilder, sin esperar a que finalice el primero antes de iniciar el segundo.
+ Lee la salida estándar de cada subproceso utilizando getInputStream(), InputStreamReader y BufferedReader.
+ Sincroniza la finalización con waitFor(), muestra los conteos individuales y la suma total.
+ Captura y gestiona las excepciones correspondientes (IOException, InterruptedException) e incluye comentarios explicativos breves.
