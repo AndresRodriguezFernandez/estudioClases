@@ -1,6 +1,6 @@
 package PSP.Trimestre1.Claude.RA1_2_3.practicaExamen.sockets;
 
-public class RegistroTemperatura {
+public class RegistroHumedad {
     private int temperatura;
     private boolean disponible = false;
 

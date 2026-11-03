@@ -12,7 +12,16 @@ public class FiltroPares {
     }
 
     public static void main(String[] args) {
-        int resultado = contador(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
-        System.out.println(resultado);
+        if(args.length < 2){
+            System.out.println("Faltan argumentos");
+            return;
+        }
+        try{
+            int resultado = contador(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+            System.out.println(resultado);
+        }catch(NumberFormatException e){
+            System.err.println("Los argumentos debden de ser numero enteros");
+        }
+
     }
 }

@@ -1,0 +1,10 @@
+1. Programación multiproceso.
+Cálculo de sumatorios por bloques (2,5 puntos)
+Crea una aplicación Java con dos clases: SumadorRango y LanzadorSumas.
+SumadorRango: Recibe dos números enteros positivos mediante los argumentos de la línea de comandos (args[0] y args[1]).
+Calcula la suma acumulada de todos los números comprendidos en dicho intervalo inclusivo (ejemplo: entre 1 y 100) y vuelca el resultado numérico por la salida estándar mediante System.out.println().
+LanzadorSumas:Define dos sub-intervalos complementarios (por ejemplo, 1 a 500 y 501 a 1000).
+Instancia y ejecuta dos procesos concurrentes usando ProcessBuilder para ejecutar SumadorRango de forma solapada.
+Redirige y captura los flujos de entrada del padre con getInputStream(), procesándolos mediante InputStreamReader y BufferedReader.
+Detiene el flujo del padre con waitFor() hasta que ambos procesos retornen, parsea los resultados y muestra por pantalla la suma parcial de cada hijo y la suma total combinada.
+Trata las excepciones de E/S e interrupción y documenta con comentarios concisos.
