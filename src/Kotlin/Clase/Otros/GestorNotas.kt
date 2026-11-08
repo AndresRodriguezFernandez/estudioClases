@@ -1,4 +1,6 @@
-package Kotlin
+package Kotlin.Clase.Otros
+
+import kotlin.collections.iterator
 
 fun main(){
     //fase 1

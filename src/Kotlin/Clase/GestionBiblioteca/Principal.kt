@@ -1,4 +1,4 @@
-package Kotlin.Trimestre1.GestionBiblioteca
+package Kotlin.Clase.GestionBiblioteca
 
 import Libro
 
@@ -42,16 +42,16 @@ fun mostarLibros(listaLibros: MutableList<Libro>){
 
 fun prestarLibro(listaLibros: MutableList<Libro>){
     println("Introduce el titulo del libro que deseas mostrar: ")
-    var nombre = readln().trim().uppercase()
+    var nombre = readln()
     var encontrado = false;
     for (libros in listaLibros){
-        if (libros.titulo.uppercase().trim().equals(nombre)){
+        if (libros.titulo.uppercase().trim().equals(nombre.trim().uppercase())){
             encontrado=true
             libros.prestar()
         }
     }
     if (!encontrado){
-        println("No se ha encontrado el libro.")
+        println("No se ha encontrado el libro <<${nombre}>>")
     }
 }
 

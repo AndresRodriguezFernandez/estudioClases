@@ -1,4 +1,4 @@
-package Kotlin
+package Kotlin.Clase.Otros
 
 fun main(){
     println("===🎰MAQUINA TRAGAPERRAS🎰====")

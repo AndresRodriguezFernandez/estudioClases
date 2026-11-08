@@ -1,0 +1,11 @@
+
+Ejercicio: Resumen de compra con descuento
+
+Enunciado:
+Crea un programa en Kotlin que calcule el total a pagar de una lista de productos y aplique un descuento si la compra supera cierta cantidad.
+El programa debe cumplir con los siguientes requisitos:
+• Lista de precios. Declara una lista inmutable (listOf) de tipo Double que contenga los precios de varios artículos (por ejemplo: 15.50, 42.0, 8.99, 25.0, 30.0).
+• Función de cálculo. Crea una función llamada calcularTotal que reciba la lista de precios y devuelva el resultado final en Double.
+• Recorrido y suma. Dentro de la función, utiliza un bucle (for) o una función de colección para sumar todos los precios de la lista.
+• Condicional de descuento. Si la suma total es mayor o igual a 100.0, aplica un 10% de descuento sobre el total. Si es menor a 100.0, no apliques ningún descuento.
+• Salida en consola. Desde la función main, imprime el subtotal sin descuento, indica si se aplicó el descuento o no, y muestra el total final a pagar.
