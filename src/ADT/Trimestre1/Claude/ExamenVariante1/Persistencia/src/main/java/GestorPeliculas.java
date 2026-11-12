@@ -1,3 +1,5 @@
+package ADT.Trimestre1.Claude.ExamenVariante1.Persistencia.src.main.java;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.exc.StreamWriteException;
 import com.fasterxml.jackson.core.type.TypeReference;

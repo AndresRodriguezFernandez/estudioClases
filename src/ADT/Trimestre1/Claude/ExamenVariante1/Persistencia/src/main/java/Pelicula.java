@@ -1,3 +1,5 @@
+package ADT.Trimestre1.Claude.ExamenVariante1.Persistencia.src.main.java;
+
 public class Pelicula {
     private String titulo;
     private String director;
