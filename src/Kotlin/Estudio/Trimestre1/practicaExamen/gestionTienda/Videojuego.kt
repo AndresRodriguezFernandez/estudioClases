@@ -25,4 +25,12 @@ class Videojuego (var titulo:String, var plataforma:String, var precio:Double){
             print(" Estado: Vendido")
         }
     }
+
+    fun getTitulo():String{
+        return titulo;
+    }
+
+    fun getPlataforma():String{
+        return plataforma
+    }
 }
